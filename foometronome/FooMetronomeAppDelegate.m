@@ -26,15 +26,13 @@
 - (IBAction)toggleMetronome:(id)sender{
     [self.metronome togglePlay];
     [self updateUserInterface];
+    NSLog(@"Toggle metronome %d", self.metronome.play);
 }
 
 - (IBAction)setBpmFromTextField:(id)sender {
     int newBpm = [sender intValue];
-    [self.metronome setBpm: newBpm];
+    [self.metronome updateBeat: newBpm];
     [self updateUserInterface];
-    
-    NSLog(@"sent setBpm: with value %d", self.metronome.bpm);
-    
 }
 
 - (void) updateStartStopButton{

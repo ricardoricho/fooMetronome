@@ -12,7 +12,10 @@
 
 @property (assign) int bpm;
 @property (assign) bool play;
+@property (assign) NSSound *sound;
+@property (assign) NSTimer *timer;
 
+-(void) updateBeat:(int)newBpm;
 -(void) togglePlay;
 -(void) startPlaying;
 -(void) stopPlaying;

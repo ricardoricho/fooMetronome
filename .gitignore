@@ -1,5 +1,6 @@
 # Xcode
 .DS_Store
+
 */build/*
 *.pbxuser
 !default.pbxuser
@@ -19,3 +20,7 @@ DerivedData
 
 #CocoaPods
 Pods
+
+#Personal Settings
+xcurserdata
+*.xcodeproj
